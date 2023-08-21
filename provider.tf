@@ -1,7 +1,7 @@
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "train4aws-org"
+    organization = "ResoluteUSA"
     workspaces {
       prefix = "s3-bucket-demo-"
     }
