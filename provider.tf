@@ -1,7 +1,7 @@
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "devops-lab-2023"
+    organization = "train4aws-org"
     workspaces {
       prefix = "s3-bucket-demo-"
     }
@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "aws" {
-    region = "us-east-2"
+    region = "us-east-1"
     secret_key = var.aws_secret_key
     access_key = var.aws_access_key
 }
